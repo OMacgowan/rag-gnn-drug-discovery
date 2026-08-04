@@ -1,0 +1,62 @@
+[
+  {
+    "id": "d1",
+    "question": "In the CondPSE paper, how much does CSL accuracy improve relative to the GPSE baseline, and what is the resulting accuracy?",
+    "reference_answer": "CondPSE raises CSL accuracy from 42.9% (GPSE) to 97.3%.",
+    "source_doc_id": "2607.25169v1"
+  },
+  {
+    "id": "d2",
+    "question": "In the MEGA-CL paper's external evaluation on 18 novel compounds derived from recently approved FDA drugs, what fraction of human liver microsome clearance (HLMC) predictions fell within a 2-fold error range?",
+    "reference_answer": "Over 50% of HLMC predictions were within a 2-fold error range.",
+    "source_doc_id": "2607.24314v1"
+  },
+  {
+    "id": "d3",
+    "question": "What R-squared value does EnsembleEGNN achieve on the CREMP-CycPeptMPDB dataset after pretraining, compared to training from scratch?",
+    "reference_answer": "Pretrained R^2 = 0.477 (Pearson r = 0.699), versus R^2 = 0.005 when trained from scratch.",
+    "source_doc_id": "2607.21561v1"
+  },
+  {
+    "id": "d4",
+    "question": "What package repositories is the path_boost Python package published on?",
+    "reference_answer": "PyPI and GitHub.",
+    "source_doc_id": "2607.07935v1"
+  },
+  {
+    "id": "d5",
+    "question": "According to \"Physics-Aware Auxiliary Losses Improve Out-of-Distribution Generalization of a GNN Synthesizability Filter,\" which four existing synthesizability filters are named as purely statistical and prone to degrading under distribution shift?",
+    "reference_answer": "SAScore, SCScore, RAscore, and DeepSA.",
+    "source_doc_id": "2606.12651v1"
+  },
+  {
+    "id": "d6",
+    "question": "In the FracAug paper, what is the maximum average AUROC gain reported across its experiments spanning 14 GNNs and 12 real-world datasets?",
+    "reference_answer": "Up to a 5.72% average AUROC gain (also up to 7.23% AUPRC and 4.18% F1-score).",
+    "source_doc_id": "2509.20978v1"
+  },
+  {
+    "id": "d7",
+    "question": "What is the name of the heterogeneous graph neural network model proposed for predicting drug-drug interactions in the HGNN-DDI paper, and what does it integrate?",
+    "reference_answer": "HGNN-DDI; it integrates multiple drug-related data sources through heterogeneous biomedical network representation learning.",
+    "source_doc_id": "2508.18766v1"
+  },
+  {
+    "id": "d8",
+    "question": "What is the name of the GNN model that predicts drug-drug interactions for emerging drugs by extracting paths between drug pairs in a biomedical network?",
+    "reference_answer": "EmerGNN.",
+    "source_doc_id": "2311.09261v1"
+  },
+  {
+    "id": "d9",
+    "question": "In the CentSmoothie paper, how is drug-drug interaction prediction formulated, and what does each hyperedge represent?",
+    "reference_answer": "DDI prediction is formulated as a hypergraph problem, where each hyperedge is a triple consisting of two drug nodes and one label (side effect) node, using a central-smoothing formulation.",
+    "source_doc_id": "2112.07837v4"
+  },
+  {
+    "id": "d10",
+    "question": "What PR-AUC improvements does GENN (Graph Energy Neural Network) achieve over baselines on its two real-world drug-drug interaction datasets?",
+    "reference_answer": "13.77% and 5.01% PR-AUC improvement on the two datasets, respectively.",
+    "source_doc_id": "1910.02107v2"
+  }
+]
