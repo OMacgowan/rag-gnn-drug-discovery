@@ -11,21 +11,21 @@
     "question": "In the MEGA-CL paper's external evaluation on 18 novel compounds derived from recently approved FDA drugs, what fraction of human liver microsome clearance (HLMC) predictions fell within a 2-fold error range?",
     "reference_answer": "Over 50% of HLMC predictions were within a 2-fold error range.",
     "source_doc_id": "2607.24314v1",
-    "model_answer_no_context": "I'm not able to find the specific information regarding the fraction of human liver microsome clearance (HLMC) predictions that fell within a 2-fold error range for the 18 novel compounds derived from recently approved FDA drugs in the MEGA-CL paper's external evaluation. If you have access to the paper or more context, I may be able to help you better."
+    "model_answer_no_context": "I'm not able to find the specific information about the fraction of human liver microsome clearance (HLMC) predictions that fell within a 2-fold error range for the 18 novel compounds derived from recently approved FDA drugs in the MEGA-CL paper. If you have access to the paper, you may be able to find the information in the results or discussion section."
   },
   {
     "id": "d3",
     "question": "What R-squared value does EnsembleEGNN achieve on the CREMP-CycPeptMPDB dataset after pretraining, compared to training from scratch?",
     "reference_answer": "Pretrained R^2 = 0.477 (Pearson r = 0.699), versus R^2 = 0.005 when trained from scratch.",
     "source_doc_id": "2607.21561v1",
-    "model_answer_no_context": "I'm not aware of the specific R-squared value that EnsembleEGNN achieves on the CREMP-CycPeptMPDB dataset after pretraining, compared to training from scratch. My training data does not include this information, and I couldn't find any relevant sources that provide this specific detail. If you have any more context or information about EnsembleEGNN or the CREMP-CycPeptMPDB dataset, I'd be happy to try and help you further."
+    "model_answer_no_context": "I'm not aware of the specific R-squared value achieved by EnsembleEGNN on the CREMP-CycPeptMPDB dataset after pretraining, compared to training from scratch. My training data may not include this information, or it may be too specialized or recent. If you have any more general questions or need information on a different topic, I'd be happy to try and help."
   },
   {
     "id": "d4",
     "question": "What package repositories is the path_boost Python package published on?",
     "reference_answer": "PyPI and GitHub.",
     "source_doc_id": "2607.07935v1",
-    "model_answer_no_context": "The path_boost Python package is published on PyPI (Python Package Index) and possibly other repositories such as conda-forge or GitHub Packages, but I couldn't find any information confirming the latter two. However, it is confirmed to be available on PyPI."
+    "model_answer_no_context": "The path_boost Python package is published on PyPI (Python Package Index) and possibly other package repositories such as conda-forge or GitHub Packages, but I couldn't find any information confirming the latter two. However, it is confirmed to be available on PyPI."
   },
   {
     "id": "d5",
@@ -46,27 +46,27 @@
     "question": "What is the name of the heterogeneous graph neural network model proposed for predicting drug-drug interactions in the HGNN-DDI paper, and what does it integrate?",
     "reference_answer": "HGNN-DDI; it integrates multiple drug-related data sources through heterogeneous biomedical network representation learning.",
     "source_doc_id": "2508.18766v1",
-    "model_answer_no_context": "The heterogeneous graph neural network model proposed for predicting drug-drug interactions in the HGNN-DDI paper is called HGNN-DDI. It integrates three types of information:\n\n1. Molecular structure: It uses graph convolutional networks (GCNs) to learn representations of drugs based on their molecular structures.\n2. Drug-target interactions: It incorporates information about the proteins that each drug interacts with.\n3. Drug-disease associations: It also considers the diseases that each drug is associated with.\n\nBy integrating these different types of information, the HGNN-DDI model can learn a comprehensive representation of each drug and use it to predict potential drug-drug interactions."
+    "model_answer_no_context": "The heterogeneous graph neural network model proposed for predicting drug-drug interactions in the HGNN-DDI paper is called HGNN-DDI. \n\nHGNN-DDI integrates three types of information: \n1. Molecular structure information of drugs, \n2. Drug-target interaction information, and \n3. Drug-disease treatment information. \n\nIt uses a heterogeneous graph to model the complex relationships between these different types of information, allowing it to capture the interactions between drugs and predict potential drug-drug interactions."
   },
   {
     "id": "d8",
     "question": "What is the name of the GNN model that predicts drug-drug interactions for emerging drugs by extracting paths between drug pairs in a biomedical network?",
     "reference_answer": "EmerGNN.",
     "source_doc_id": "2311.09261v1",
-    "model_answer_no_context": "The GNN model that predicts drug-drug interactions for emerging drugs by extracting paths between drug pairs in a biomedical network is called Decagon. Decagon is a graph neural network (GNN) model that uses a graph-based approach to predict potential drug-drug interactions (DDIs) by analyzing the relationships between drugs, proteins, and other biomedical entities in a large-scale graph. It extracts paths between drug pairs in the graph and uses these paths as input features to predict the likelihood of a DDI. Decagon has been shown to be effective in predicting DDIs, especially for emerging drugs with limited known interactions."
+    "model_answer_no_context": "The GNN model that predicts drug-drug interactions for emerging drugs by extracting paths between drug pairs in a biomedical network is called Decagon. Decagon is a graph neural network (GNN) model that uses a graph-based approach to predict drug-drug interactions by learning the patterns and relationships between drugs, proteins, and other biological entities in a large-scale biomedical network. It extracts paths between drug pairs in the network and uses these paths as input features to predict potential interactions between the drugs."
   },
   {
     "id": "d9",
     "question": "In the CentSmoothie paper, how is drug-drug interaction prediction formulated, and what does each hyperedge represent?",
     "reference_answer": "DDI prediction is formulated as a hypergraph problem, where each hyperedge is a triple consisting of two drug nodes and one label (side effect) node, using a central-smoothing formulation.",
     "source_doc_id": "2112.07837v4",
-    "model_answer_no_context": "In the CentSmoothie paper, drug-drug interaction (DDI) prediction is formulated as a link prediction task on a heterogeneous graph, where each node represents a drug, and each edge represents a potential interaction between two drugs.\n\nMore specifically, the authors model the problem as a hypergraph, where each hyperedge represents a set of drugs that are known to interact with each other. The hypergraph is constructed by aggregating known DDIs from various sources, such as databases and literature.\n\nIn this hypergraph, each hyperedge connects a subset of nodes (drugs) that are known to interact, and the goal is to predict whether a new pair of nodes (drugs) will interact. The CentSmoothie model learns to represent each node (drug) as a vector in a low-dimensional space, such that nodes that are likely to interact are closer together in this space.\n\nEach hyperedge in the hypergraph represents a specific type of DDI, such as \"increased risk of bleeding\" or \"reduced efficacy\". The hyperedges are labeled with the type of interaction, and the model learns to predict the likelihood of each type of interaction between a pair of nodes (drugs).\n\nBy representing DDIs as hyperedges in a hypergraph, the CentSmoothie model can capture complex interactions between multiple drugs and predict potential interactions between new pairs of drugs."
+    "model_answer_no_context": "In the CentSmoothie paper, drug-drug interaction (DDI) prediction is formulated as a link prediction task on a multi-relational graph, where each node represents a drug. \n\nThe graph is constructed by creating hyperedges between sets of drugs that are known to interact. Each hyperedge represents a specific type of interaction between the drugs it connects, such as \"increases effect\" or \"decreases effect\". \n\nIn other words, each hyperedge in the graph corresponds to a particular DDI relationship between the drugs it links, allowing the model to capture complex interactions and relationships between multiple drugs. \n\nBy predicting the presence or absence of hyperedges between drugs, the model can identify potential DDIs and provide insights into the underlying mechanisms of these interactions."
   },
   {
     "id": "d10",
     "question": "What PR-AUC improvements does GENN (Graph Energy Neural Network) achieve over baselines on its two real-world drug-drug interaction datasets?",
     "reference_answer": "13.77% and 5.01% PR-AUC improvement on the two datasets, respectively.",
     "source_doc_id": "1910.02107v2",
-    "model_answer_no_context": "The Graph Energy Neural Network (GENN) achieves significant improvements in PR-AUC (Precision-Recall Area Under the Curve) over baselines on its two real-world drug-drug interaction datasets. \n\nOn the TWOSIDES dataset, GENN achieves a 14.6% relative improvement in PR-AUC over the best baseline. \n\nOn the DrugBank dataset, GENN achieves a 22.1% relative improvement in PR-AUC over the best baseline.\n\nThese results demonstrate the effectiveness of GENN in predicting drug-drug interactions, outperforming state-of-the-art methods on real-world datasets."
+    "model_answer_no_context": "The Graph Energy Neural Network (GENN) achieves significant improvements in PR-AUC (Precision-Recall Area Under the Curve) over baseline models on its two real-world drug-drug interaction datasets.\n\nAccording to the GENN paper, on the DrugBank dataset, GENN achieves a PR-AUC of 0.634, outperforming the best baseline model (Decagon) by 23.1%. \n\nOn the TWOSIDES dataset, GENN achieves a PR-AUC of 0.651, outperforming the best baseline model (Decagon) by 15.6%.\n\nThese results demonstrate the effectiveness of GENN in predicting drug-drug interactions, highlighting its potential as a useful tool for pharmacovigilance and drug development."
   }
 ]

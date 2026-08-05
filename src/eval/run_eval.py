@@ -107,10 +107,18 @@ def run_eval():
         json.dump(all_results, f, indent=2, ensure_ascii=False)
     print(f"\nSaved full results to {results_path}")
 
-    csv_path = os.path.join(config.EVAL_RESULTS_DIR, "human_grading.csv")
-    write_human_grading_csv(all_results, csv_path)
-    print(f"Saved human grading sheet to {csv_path}")
-    print("Open that CSV and fill in correct_yn / supported_by_citation_yn / appropriate_idk_yn (y/n) for each row.")
+    template_path = os.path.join(config.EVAL_RESULTS_DIR, "human_grading_template.csv")
+    write_human_grading_csv(all_results, template_path)
+    print(f"Saved a fresh human grading template to {template_path}")
+
+    graded_path = os.path.join(config.EVAL_RESULTS_DIR, "human_grading.csv")
+    if os.path.exists(graded_path):
+        print(f"NOTE: {graded_path} already exists (your filled-in grades) and was NOT overwritten.")
+        print(f"If the generated answers changed, diff them against {template_path} and update your grades manually.")
+    else:
+        print(f"No {graded_path} found yet. Copy {template_path} to {graded_path} and fill in")
+        print("correct_yn / supported_by_citation_yn / appropriate_idk_yn (y/n) for each row, then run")
+        print("python src/eval/summarize_human_grades.py")
 
     bm25_summary = summarize(bm25_results, "bm25")
     dense_summary = summarize(dense_results, "dense")

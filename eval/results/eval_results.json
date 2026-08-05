@@ -125,7 +125,7 @@
     "reciprocal_rank": 1.0,
     "recall_at_5": 1.0,
     "hit_at_5": 1.0,
-    "generated_answer": "GENN models correlations between interaction types by explicitly considering link type correlations using a graph energy neural network, where the energy function is defined by graph neural networks [1910.02107v2_c0]. On the other hand, CentSmoothie models these correlations by formulating DDI as a hypergraph where each hyperedge is a triple: two nodes for drugs and one node for a label, and learning representations of nodes and labels altogether with a novel central-smoothing formulation [2112.07837v4_c0]."
+    "generated_answer": "GENN models correlations between interaction types by explicitly considering link type correlations and introducing a new energy-based model where the energy function is defined by graph neural networks [1910.02107v2_c0]. On the other hand, CentSmoothie models these correlations by formulating DDI as a hypergraph where each hyperedge is a triple: two nodes for drugs and one node for a label, and learning representations of nodes and labels altogether with a novel central-smoothing formulation [2112.07837v4_c0]."
   },
   {
     "id": "g7",
@@ -147,7 +147,7 @@
     "reciprocal_rank": 1.0,
     "recall_at_5": 0.5,
     "hit_at_5": 1.0,
-    "generated_answer": "The two different strategies used to improve GNN robustness under limited or out-of-distribution data in drug discovery are: \n1) using physics-aware auxiliary losses, such as topological complexity regression and strain-energy soft penalty, to improve out-of-distribution generalization [2606.12651v1_c0], and \n2) employing meta-learning to learn initializations for GNNs, which enables better performance in low-resource settings and out-of-distribution tasks [2003.05996v2_c0]."
+    "generated_answer": "The two different strategies used to improve GNN robustness under limited or out-of-distribution data in drug discovery are: \n1. Using physics-aware auxiliary losses, such as topological complexity regression and strain-energy soft penalty, to improve out-of-distribution generalization [2606.12651v1_c0], and \n2. Utilizing meta-learning to learn initializations for GNNs, which enables state-of-the-art performance in few-shot learning benchmarks and improves performance in low-resource drug discovery projects [2003.05996v2_c0]."
   },
   {
     "id": "g8",
@@ -166,7 +166,7 @@
     "reciprocal_rank": null,
     "recall_at_5": null,
     "hit_at_5": null,
-    "generated_answer": "I don't know, as the provided context does not contain information about the specific GPU hardware and training time used in the path_boost experiments [2607.07935v1_c0]."
+    "generated_answer": "I don't know, as the retrieved context does not contain information about the specific GPU hardware and training time used in the path_boost paper's experiments [2607.07935v1_c0]."
   },
   {
     "id": "g9",
@@ -185,7 +185,7 @@
     "reciprocal_rank": null,
     "recall_at_5": null,
     "hit_at_5": null,
-    "generated_answer": "The MEGA-CL paper reports that it was prospectively evaluated on three preclinical drug candidates using in vitro hepatic microsomal metabolism assays and CYP450 inhibition assays guided by model predictions [2607.24314v1_c1]. The predicted HLMC values for all candidates were within 2.5-fold of the experimentally measured values, and 73.3% of CYP450 inhibition endpoints (11/15) were correctly classified [2607.24314v1_c1]. Additionally, in an external evaluation on 18 novel compounds derived from recently approved FDA drugs, over 50% of human liver microsome clearance (HLMC) predictions were within a 2-fold error range [2607.24314v1_c0]."
+    "generated_answer": "The MEGA-CL paper reports that it was prospectively evaluated on three preclinical drug candidates using in vitro hepatic microsomal metabolism assays and CYP450 inhibition assays guided by model predictions [2607.24314v1_c0]. The predicted HLMC values for all candidates were within 2.5-fold of the experimentally measured values, and 73.3% of CYP450 inhibition endpoints (11/15) were correctly classified [2607.24314v1_c1]."
   },
   {
     "id": "g10",
@@ -225,7 +225,7 @@
     "reciprocal_rank": 0.5,
     "recall_at_5": 1.0,
     "hit_at_5": 1.0,
-    "generated_answer": "CSL accuracy improves from 42.9% to 97.3% relative to the GPSE baseline [2607.25169v1_c1] [2607.25169v1_c0]."
+    "generated_answer": "CSL accuracy improves from 42.9% to 97.3% relative to the GPSE baseline [2607.25169v1_c1], [2607.25169v1_c0]."
   },
   {
     "id": "g2",
@@ -246,7 +246,7 @@
     "reciprocal_rank": 0.0,
     "recall_at_5": 0.0,
     "hit_at_5": 0.0,
-    "generated_answer": "I don't know, as the retrieved context does not contain information about GENN or its performance on real-world drug-drug interaction datasets [2606.07698v1_c1, 2501.18439v1_c1, 2502.15346v1_c1, 2311.07632v2_c1, 2507.18926v5_c1]."
+    "generated_answer": "I don't know, as there is no mention of GENN or its performance on real-world drug-drug interaction datasets in the provided context [2606.07698v1_c1, 2501.18439v1_c1, 2502.15346v1_c1, 2311.07632v2_c1, 2507.18926v5_c1]."
   },
   {
     "id": "g3",
@@ -354,7 +354,7 @@
     "reciprocal_rank": 0.0,
     "recall_at_5": 0.0,
     "hit_at_5": 0.0,
-    "generated_answer": "The two different strategies used to improve GNN robustness under limited or out-of-distribution data in drug discovery are pre-training on Extended-Connectivity Fingerprints (ECFP) [2605.10722v1_c0] and self-supervised pretraining with various pretraining objectives and datasets [2207.06010v2_c0, 2604.26498v3_c0]. Additionally, another strategy is to use classical machine learning (ML) models which have been shown to be competitive and even superior to GNNs in certain tasks [2604.26498v3_c0]. However, the main two GNN-specific strategies mentioned are ECFP pre-training and self-supervised pretraining."
+    "generated_answer": "The two different strategies used to improve GNN robustness under limited or out-of-distribution data in drug discovery are pre-training on Extended-Connectivity Fingerprints (ECFP) [2605.10722v1_c0] and self-supervised pretraining with various pretraining objectives and datasets [2207.06010v2_c0, 2201.09637v1_c1]."
   },
   {
     "id": "g8",
