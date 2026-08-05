@@ -1,0 +1,16 @@
+[
+  {
+    "retriever": "bm25",
+    "num_scored_questions": 7,
+    "mrr": 1.0,
+    "recall_at_5": 0.9285714285714286,
+    "hit_at_5": 1.0
+  },
+  {
+    "retriever": "dense",
+    "num_scored_questions": 7,
+    "mrr": 0.5714285714285714,
+    "recall_at_5": 0.6428571428571429,
+    "hit_at_5": 0.7142857142857143
+  }
+]

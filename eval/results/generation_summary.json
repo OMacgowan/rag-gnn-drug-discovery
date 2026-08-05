@@ -1,0 +1,16 @@
+[
+  {
+    "retriever": "bm25",
+    "num_questions": 10,
+    "answer_correctness": 0.8,
+    "citation_faithfulness": 1.0,
+    "appropriate_idk_rate": 0.6666666666666666
+  },
+  {
+    "retriever": "dense",
+    "num_questions": 10,
+    "answer_correctness": 0.6,
+    "citation_faithfulness": 1.0,
+    "appropriate_idk_rate": 0.6666666666666666
+  }
+]

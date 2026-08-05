@@ -1,0 +1,72 @@
+[
+  {
+    "id": "g1",
+    "type": "factoid",
+    "question": "In the CondPSE paper, how much does CSL accuracy improve relative to the GPSE baseline?",
+    "reference_answer": "CSL accuracy improves from 42.9% (GPSE) to 97.3% (CondPSE).",
+    "source_chunk_ids": ["2607.25169v1_c0"]
+  },
+  {
+    "id": "g2",
+    "type": "factoid",
+    "question": "What PR-AUC improvements does GENN report on its two real-world drug-drug interaction datasets?",
+    "reference_answer": "13.77% and 5.01% PR-AUC improvement over baselines on the two datasets, respectively.",
+    "source_chunk_ids": ["1910.02107v2_c0"]
+  },
+  {
+    "id": "g3",
+    "type": "factoid",
+    "question": "What R-squared does EnsembleEGNN achieve on the CREMP-CycPeptMPDB dataset after pretraining, compared to training from scratch?",
+    "reference_answer": "Pretrained R^2 = 0.477 (Pearson r = 0.699), versus R^2 = 0.005 when trained from scratch.",
+    "source_chunk_ids": ["2607.21561v1_c0"]
+  },
+  {
+    "id": "g4",
+    "type": "factoid",
+    "question": "How does FracAug expand its training set using pseudo-labels?",
+    "reference_answer": "FracAug uses predictions from both original and augmented graphs to pseudo-label unlabeled data, iteratively expanding the training set.",
+    "source_chunk_ids": ["2509.20978v1_c0"]
+  },
+  {
+    "id": "g5",
+    "type": "multi_hop",
+    "question": "How do HGNN-DDI and EmerGNN differ in how they represent drug relationships for drug-drug interaction prediction?",
+    "reference_answer": "HGNN-DDI integrates multiple drug-related data sources into a heterogeneous biomedical network and propagates information across diverse node/edge types, while EmerGNN (a flow-based GNN) instead learns pairwise drug representations by extracting and propagating information along paths between drug pairs in the biomedical network, weighting edges by relevance, which is specifically aimed at emerging drugs with little known interaction data.",
+    "source_chunk_ids": ["2508.18766v1_c0", "2311.09261v1_c0"]
+  },
+  {
+    "id": "g6",
+    "type": "multi_hop",
+    "question": "GENN and CentSmoothie both address correlations between interaction types (labels) in drug-drug interaction prediction. How does each model those correlations differently?",
+    "reference_answer": "GENN formulates DDI prediction as a structure prediction problem and models link-type correlations explicitly through an energy-based model defined by a graph neural network. CentSmoothie instead formulates DDI as a hypergraph, where each hyperedge is a triple of two drug nodes and one label node, and learns node/label representations jointly through a central-smoothing formulation.",
+    "source_chunk_ids": ["1910.02107v2_c0", "2112.07837v4_c0"]
+  },
+  {
+    "id": "g7",
+    "type": "multi_hop",
+    "question": "What two different strategies do these corpus papers use to improve GNN robustness under limited or out-of-distribution data in drug discovery?",
+    "reference_answer": "The physics-aware synthesizability filter paper adds auxiliary losses (a topological-complexity regression and a strain-energy penalty from physical priors) to a GNN backbone to improve out-of-distribution generalization. FracAug instead improves robustness under limited supervision through a data augmentation approach, generating semantically consistent graph variants and pseudo-labeling unlabeled data.",
+    "source_chunk_ids": ["2606.12651v1_c0", "2509.20978v1_c0"]
+  },
+  {
+    "id": "g8",
+    "type": "unanswerable",
+    "question": "What GPU hardware and training time does the path_boost paper report for its experiments?",
+    "reference_answer": "I don't know - the path_boost paper does not report any GPU hardware or training time details.",
+    "source_chunk_ids": []
+  },
+  {
+    "id": "g9",
+    "type": "unanswerable",
+    "question": "What clinical trial results does the MEGA-CL paper report for its ADMET predictions?",
+    "reference_answer": "I don't know - MEGA-CL reports preclinical evaluation using in vitro hepatic microsomal metabolism and CYP450 inhibition assays, not clinical trial results.",
+    "source_chunk_ids": []
+  },
+  {
+    "id": "g10",
+    "type": "unanswerable",
+    "question": "What accuracy does the corpus report for AlphaFold3 on the CASP15 structure-prediction benchmark?",
+    "reference_answer": "I don't know - no paper in the corpus discusses AlphaFold3 or the CASP15 benchmark.",
+    "source_chunk_ids": []
+  }
+]
